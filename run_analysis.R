@@ -57,4 +57,8 @@ run_analysis <- function(wd){
   tidyDataSet <- filteredDataSet
   tidyDataSet$activity_names <- activityLabels[match(tidyDataSet$activity_names,activityLabels[,1]),2]
   tidyDataSet
+  
+  ## Phase 5
+  endCol <- ncol(tidyDataSet)-2
+  newTidySet <- aggregate(as.matrix(tidyDataSet[,1:endCol])~ subject + activity_names, tidyDataSet, mean)
 }
