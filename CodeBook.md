@@ -22,14 +22,13 @@ activity_names	18
 
 >NOTES FOR THE FEATURES ONWARDS:
 
+>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+>Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+>Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
-These signals were used to estimate variables of the feature vector for each pattern:  
+>These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
@@ -50,10 +49,10 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The mean (mean()) and standard deviation (std()) of the above signals were then estimated and selected. Finally, the average of each signal for each activity and each subject were calculated for the following set of variables:          
+>The mean (mean()) and standard deviation (std()) of the above signals were then estimated and selected. Finally, the average of each signal for each activity and each subject were calculated for the following set of variables:          
 
 tBodyAcc-mean()-X	11 
-		-1..1 .Normalized and bounded value of the feature.        
+: -1..1 .Normalized and bounded value of the feature.        
 
 tBodyAcc-mean()-Y  	11        
 		-1..1 .Normalized and bounded value of the feature.
@@ -251,19 +250,19 @@ fBodyBodyGyroJerkMag-mean() 	11
 fBodyBodyGyroJerkMag-std() 	11
 		-1..1 .Normalized and bounded value of the feature.
 
-==================================================================
-NOTE: 
-=====
-This Code book is an updated/modified version of the Code book provided in:
-==================================================================
-Human Activity Recognition Using Smartphones Dataset
+
+>NOTE: 
+
+>This Code book is an updated/modified version of the Code book provided in:
+
+>Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
+>Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+>Smartlab - Non Linear Complex Systems Laboratory
+>DITEN - Università degli Studi di Genova.
+>Via Opera Pia 11A, I-16145, Genoa, Italy.
+>activityrecognition@smartlab.ws
+>www.smartlab.ws
 
-==================================================================
+
