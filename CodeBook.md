@@ -3,9 +3,9 @@ Human Activity Recognition Using Smartphones Analyzed Dataset
 Data Dictionary
 ---------------
 subject 	2
-	Subject Label
-		1..30 .Unique Identifier assigned for each subject who 
-			.performed the activity for each window sample.                 
+: Subject Label
+:: 1..30 .Unique Identifier assigned for each subject who 
+::.performed the activity for each window sample.                 
 
 activity_names	18
 	Activity Label
