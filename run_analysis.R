@@ -61,7 +61,4 @@ run_analysis <- function(wd){
   ## Phase 5
   endCol <- ncol(tidyDataSet)-2
   newTidySet <- aggregate(as.matrix(tidyDataSet[,1:endCol])~ subject + activity_names, tidyDataSet, mean)
-  
-  ## Phase 6
-  write.csv(newTidySet, "newTidyDataSet.csv", row.names = FALSE)
 }

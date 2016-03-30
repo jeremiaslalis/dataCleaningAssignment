@@ -1,4 +1,4 @@
-The **run_analysis.R** script is composed of six (6) major phases with the following functionality:  
+The **run_analysis.R** script is composed of five (5) major phases with the following functionality:  
 
 **Phase 1** is designed to merge the training and the test sets to create one data set. It has three (3) sub-phases with the following functionality:  
 + *Phase 1.1* reads the training and its corresponding subject and activity label files and merge it into one tidy data set named mergedTrainingSet.  
@@ -17,8 +17,3 @@ The **run_analysis.R** script is composed of six (6) major phases with the follo
 + *Phase 4.2* assign the appropriate activity label based on the values in the lookup table.  
 
 **Phase 5** is designed to create a second, independent tidy data set with the average of each variable for each activity and each subject using the dataset that was produced in *Phase 4*.  
-
-**Phase 6** is the final phase and is designed to save the tidy data set produced from *Phase 5* in Comma Separated Value (CSV) format.
-
-
-
